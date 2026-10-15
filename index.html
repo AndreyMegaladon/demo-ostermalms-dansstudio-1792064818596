@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Östermalms Dansstudio - Hem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-stone-900 flex items-center gap-2">
+                <i class="fa-solid fa-fire text-[#D4AF37]"></i> Östermalms Dansstudio
+            </a>
+            <div class="hidden md:flex items-center gap-2">
+                <a href="index.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Hem</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Om oss</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Kurser</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Galleri</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Boka</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Kontakt</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-2xl focus:outline-none"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 flex flex-col gap-2">
+        <a href="index.html" class="bg-amber-500 text-white rounded-lg px-4 py-2">Hem</a>
+        <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Om oss</a>
+        <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Kurser</a>
+        <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Galleri</a>
+        <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Boka</a>
+        <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Kontakt</a>
+    </div>
+
+    <header class="min-h-[80vh] relative bg-cover bg-center flex items-center justify-center text-center px-6" style="background-image: url('https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=1920&q=80')">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 max-w-4xl text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">Östermalms Dansstudio</h1>
+            <p class="text-lg md:text-xl mb-8 font-light text-stone-200">Dansstudio i hjärtat av Stockholm för alla åldrar och nivåer med professionella lärare och svenska mästare.</p>
+            <a href="booking.html" class="inline-block bg-[#D4AF37] hover:bg-amber-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-2xl transition">Boka kurs nu</a>
+        </div>
+    </header>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Populära kurser</h2>
+            <p class="text-stone-600 max-w-2xl mx-auto">Upptäck några av våra mest uppskattade dansklasser och privatlektioner.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-stone-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Ballroom" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-[#D4AF37] mb-2">Kurser & Lektioner</span>
+                    <h3 class="text-xl font-bold mb-2">Ballroom & Latin Nybörjare (Vuxna)</h3>
+                    <p class="text-stone-600 text-sm mb-6 flex-grow">Lär dig grunderna i de klassiska Let's Dance-danserna som cha-cha-cha, rumba, vals och tango i en rolig och lärorik miljö.</p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-stone-100">
+                        <span class="text-lg font-bold text-stone-900">2 970 SEK</span>
+                        <a href="booking.html" class="bg-stone-900 hover:bg-[#D4AF37] text-white px-4 py-2 rounded-lg text-sm transition">Boka</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-stone-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Zumba" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-[#D4AF37] mb-2">Kurser & Lektioner</span>
+                    <h3 class="text-xl font-bold mb-2">Zumba Dance Fitness</h3>
+                    <p class="text-stone-600 text-sm mb-6 flex-grow">Ett fartfyllt och energiskt träningspass som kombinerar dansrörelser med effektiv träning till latinska rytmer.</p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-stone-100">
+                        <span class="text-lg font-bold text-stone-900">2 145 SEK</span>
+                        <a href="booking.html" class="bg-stone-900 hover:bg-[#D4AF37] text-white px-4 py-2 rounded-lg text-sm transition">Boka</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-stone-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Bröllopsdans" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-[#D4AF37] mb-2">Kurser & Lektioner</span>
+                    <h3 class="text-xl font-bold mb-2">Bröllopsdans - Privatlektion</h3>
+                    <p class="text-stone-600 text-sm mb-6 flex-grow">Skräddarsydd privatlektion för par som vill förbereda och koreografera sin unika bröllopsdans inför den stora dagen (1 timme).</p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-stone-100">
+                        <span class="text-lg font-bold text-stone-900">1 250 SEK</span>
+                        <a href="booking.html" class="bg-stone-900 hover:bg-[#D4AF37] text-white px-4 py-2 rounded-lg text-sm transition">Boka</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-stone-100 py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Vad våra elever säger</h2>
+                <p class="text-stone-600">Omdömen från Google Maps och våra kurser.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-md relative">
+                    <div class="flex text-[#D4AF37] mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-700 italic mb-6">"Fantastisk dansstudio med professionella och engagerade lärare. Rekommenderas varmt för både nybörjare och erfarna!"</p>
+                    <div class="font-bold text-stone-900">Google Kurser.se Användare</div>
+                    <div class="text-xs text-stone-500">Google Maps</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md relative">
+                    <div class="flex text-[#D4AF37] mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-stone-700 italic mb-6">"Vi tog privatlektioner för bröllopsdans och det överträffade alla våra förväntningar. Otroligt professionellt bemötande!"</p>
+                    <div class="font-bold text-stone-900">Kursdeltagare</div>
+                    <div class="text-xs text-stone-500">Google Maps</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Östermalms Dansstudio</h3>
+                <p class="text-sm text-stone-400">Din dansstudio på Östermalm i Stockholm för professionell dansutveckling och glädje.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Kontakt</h3>
+                <p class="text-sm text-stone-400 mb-2"><i class="fa-solid fa-location-dot mr-2"></i> Skeppargatan 6, 114 52 Stockholm, Sweden</p>
+                <p class="text-sm text-stone-400 mb-2"><i class="fa-solid fa-phone mr-2"></i> +46709822264</p>
+                <p class="text-sm text-stone-400"><i class="fa-solid fa-envelope mr-2"></i> info@ostermalmsdansstudio.com</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Följ oss</h3>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/ostermalmsdansstudio/" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-[#D4AF37] transition text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ostermalmsdansstudio/" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-[#D4AF37] transition text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 border-t border-stone-800 text-center text-xs text-stone-500">
+            &copy; 2024 Östermalms Dansstudio. Alla rättigheter förbehållna.
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>"},{"path":"about.html","content":"<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Östermalms Dansstudio - Om oss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-stone-900 flex items-center gap-2">
+                <i class="fa-solid fa-fire text-[#D4AF37]"></i> Östermalms Dansstudio
+            </a>
+            <div class="hidden md:flex items-center gap-2">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Hem</a>
+                <a href="about.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Om oss</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Kurser</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Galleri</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Boka</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Kontakt</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-2xl focus:outline-none"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 flex flex-col gap-2">
+        <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Hem</a>
+        <a href="about.html" class="bg-amber-500 text-white rounded-lg px-4 py-2">Om oss</a>
+        <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Kurser</a>
+        <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Galleri</a>
+        <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Boka</a>
+        <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Kontakt</a>
+    </div>
+
+    <div class="bg-stone-100 py-4 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-stone-600">
+            <a href="index.html" class="hover:underline">Hem</a> > <span class="text-stone-900 font-semibold">Om oss</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold mb-8 text-center">Om Östermalms Dansstudio</h1>
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-16 border border-stone-100">
+            <div class="prose prose-stone max-w-none space-y-6 text-stone-700 leading-relaxed">
+                <p>Östermalms Dansstudio är en framstående dansskola belägen på Östermalm i Stockholm som välkomnar danssugna elever i alla åldrar och på alla erfarenhetsnivåer. Studion drivs av det svenska mästarparet och de professionella latindansarna Per Almberg och Emese Bengtsberg, tillsammans med ett erfaret team av instruktörer och domare.</p>
+                <p>Verksamheten erbjuder ett brett utbud av kurser inom bland annat ballroom och latindanser, pardans, balett för vuxna och barn, dansmix för de minsta samt energisk Zumba fitness. Här läggs stort fokus på teknik, rytm, glädje och personlig utveckling i en professionell och välkomnande miljö.</p>
+                <p>Utöver ordinarie terminskurser anordnar studion privatlektioner, workshops, dansläger och skräddarsydda bröllopsdanser för par som vill göra sin första bröllopsdans oförglömlig. Med starkt engagemang och gedigen branschkunskap inspirerar studion både glädjedansare och framtida tävlingsdansare på elitnivå.</p>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-8 text-center">Vårt unika koncept</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100">
+                <div class="w-12 h-12 bg-amber-100 text-[#D4AF37] rounded-xl flex items-center justify-center text-xl font-bold mb-4"><i class="fa-solid fa-trophy"></i></div>
+                <h3 class="font-bold mb-2">Svenska mästare</h3>
+                <p class="text-sm text-stone-600">Drivs av det svenska mästarparet Per Almberg och Emese Bengtsberg som representerar Sverige i internationella elittävlingar.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100">
+                <div class="w-12 h-12 bg-amber-100 text-[#D4AF37] rounded-xl flex items-center justify-center text-xl font-bold mb-4"><i class="fa-solid fa-heart"></i></div>
+                <h3 class="font-bold mb-2">För alla åldrar</h3>
+                <p class="text-sm text-stone-600">Erbjuder ett komplett utbud från lekfull dansmix för 3-åringar till avancerad tävlingsdans, balett och uppskattade bröllopskurser.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100">
+                <div class="w-12 h-12 bg-amber-100 text-[#D4AF37] rounded-xl flex items-center justify-center text-xl font-bold mb-4"><i class="fa-solid fa-medal"></i></div>
+                <h3 class="font-bold mb-2">Stark förankring</h3>
+                <p class="text-sm text-stone-600">Kopplat till Östermalms Dansklubb med stark förankring i den svenska tävlingsdansen och IDO/WDC-organisationerna.</p>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-bold mb-8 text-center">Vårt team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100 flex items-start gap-4">
+                <div class="w-14 h-14 bg-stone-900 text-[#D4AF37] rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">PA</div>
+                <div>
+                    <h3 class="font-bold text-lg">Per Almberg</h3>
+                    <p class="text-stone-600 text-sm">Ägare, huvudlärare, professionell dansare & domare</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100 flex items-start gap-4">
+                <div class="w-14 h-14 bg-stone-900 text-[#D4AF37] rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">EB</div>
+                <div>
+                    <h3 class="font-bold text-lg">Emese Bengtsberg</h3>
+                    <p class="text-stone-600 text-sm">Ägare, huvudlärare, professionell dansare & domare</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100 flex items-start gap-4">
+                <div class="w-14 h-14 bg-stone-900 text-[#D4AF37] rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">SP</div>
+                <div>
+                    <h3 class="font-bold text-lg">Svetlana Pajusova</h3>
+                    <p class="text-stone-600 text-sm">Tränare inom ballroom- och standarddans</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100 flex items-start gap-4">
+                <div class="w-14 h-14 bg-stone-900 text-[#D4AF37] rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">ID</div>
+                <div>
+                    <h3 class="font-bold text-lg">Iuliana Dzhulai</h3>
+                    <p class="text-stone-600 text-sm">Ballerina, koreograf & balettlärare</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-md border border-stone-100 flex items-start gap-4 md:col-span-2">
+                <div class="w-14 h-14 bg-stone-900 text-[#D4AF37] rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">BN</div>
+                <div>
+                    <h3 class="font-bold text-lg">Brigi Nagy</h3>
+                    <p class="text-stone-600 text-sm">Barnlärare, feminine-style & bröllopskoreograf</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Östermalms Dansstudio</h3>
+                <p class="text-sm text-stone-400">Din dansstudio på Östermalm i Stockholm för professionell dansutveckling och glädje.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Kontakt</h3>
+                <p class="text-sm text-stone-400 mb-2"><i class="fa-solid fa-location-dot mr-2"></i> Skeppargatan 6, 114 52 Stockholm, Sweden</p>
+                <p class="text-sm text-stone-400 mb-2"><i class="fa-solid fa-phone mr-2"></i> +46709822264</p>
+                <p class="text-sm text-stone-400"><i class="fa-solid fa-envelope mr-2"></i> info@ostermalmsdansstudio.com</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Följ oss</h3>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/ostermalmsdansstudio/" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-[#D4AF37] transition text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ostermalmsdansstudio/" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-[#D4AF37] transition text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 border-t border-stone-800 text-center text-xs text-stone-500">
+            &copy; 2024 Östermalms Dansstudio. Alla rättigheter förbehållna.
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>"},{"path":"services.html","content":"<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Östermalms Dansstudio - Kurser & Meny</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-stone-900 flex items-center gap-2">
+                <i class="fa-solid fa-fire text-[#D4AF37]"></i> Östermalms Dansstudio
+            </a>
+            <div class="hidden md:flex items-center gap-2">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Hem</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Om oss</a>
+                <a href="services.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Kurser</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Galleri</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Boka</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Kontakt</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-2xl focus:outline-none"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 flex flex-col gap-2">
+        <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Hem</a>
+        <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Om oss</a>
+        <a href="services.html" class="bg-amber-500 text-white rounded-lg px-4 py-2">Kurser</a>
+        <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Galleri</a>
+        <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Boka</a>
+        <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Kontakt</a>
+    </div>
+
+    <div class="bg-stone-100 py-4 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-stone-600">
+            <a href="index.html" class="hover:underline">Hem</a> > <span class="text-stone-900 font-semibold">Kurser</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4">Våra Kurser & Lektioner</h1>
+            <p class="text-stone-600 max-w-2xl mx-auto">Här hittar du vårt fullständiga utbud av kurser, privatlektioner och dansklasser för alla nivåer.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-stone-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Ballroom" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-[#D4AF37] mb-2">Kurser & Lektioner</span>
+                    <h3 class="text-xl font-bold mb-2">Ballroom & Latin Nybörjare (Vuxna)</h3>
+                    <p class="text-stone-600 text-sm mb-6 flex-grow">Lär dig grunderna i de klassiska Let's Dance-danserna som cha-cha-cha, rumba, vals och tango i en rolig och lärorik miljö.</p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-stone-100">
+                        <span class="text-lg font-bold text-stone-900">2 970 SEK</span>
+                        <a href="booking.html" class="bg-stone-900 hover:bg-[#D4AF37] text-white px-4 py-2 rounded-lg text-sm transition">Boka</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-stone-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Zumba" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-[#D4AF37] mb-2">Kurser & Lektioner</span>
+                    <h3 class="text-xl font-bold mb-2">Zumba Dance Fitness</h3>
+                    <p class="text-stone-600 text-sm mb-6 flex-grow">Ett fartfyllt och energiskt träningspass som kombinerar dansrörelser med effektiv träning till latinska rytmer.</p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-stone-100">
+                        <span class="text-lg font-bold text-stone-900">2 145 SEK</span>
+                        <a href="booking.html" class="bg-stone-900 hover:bg-[#D4AF37] text-white px-4 py-2 rounded-lg text-sm transition">Boka</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-stone-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Bröllopsdans" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-[#D4AF37] mb-2">Kurser & Lektioner</span>
+                    <h3 class="text-xl font-bold mb-2">Bröllopsdans - Privatlektion</h3>
+                    <p class="text-stone-600 text-sm mb-6 flex-grow">Skräddarsydd privatlektion för par som vill förbereda och koreografera sin unika bröllopsdans inför den stora dagen (1 timme).</p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-stone-100">
+                        <span class="text-lg font-bold text-stone-900">1 250 SEK</span>
+                        <a href="booking.html" class="bg-stone-900 hover:bg-[#D4AF37] text-white px-4 py-2 rounded-lg text-sm transition">Boka</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-stone-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1524594152303-9fd14744787f?auto=format&fit=crop&w=800&q=80" alt="Privatlektion" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-[#D4AF37] mb-2">Kurser & Lektioner</span>
+                    <h3 class="text-xl font-bold mb-2">Privatlektion i Ballroom & Latin</h3>
+                    <p class="text-stone-600 text-sm mb-6 flex-grow">Individuell coaching och privatlektion för solo eller par med erfaren danspedagog.</p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-stone-100">
+                        <span class="text-lg font-bold text-stone-900">1 150 SEK</span>
+                        <a href="booking.html" class="bg-stone-900 hover:bg-[#D4AF37] text-white px-4 py-2 rounded-lg text-sm transition">Boka</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-stone-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80" alt="Dansmix" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-[#D4AF37] mb-2">Kurser & Lektioner</span>
+                    <h3 class="text-xl font-bold mb-2">Dansmix Minikids (3-4 år / 5+ år)</h3>
+                    <p class="text-stone-600 text-sm mb-6 flex-grow">Lekfull och rolig dansmix där de minsta barnen får testa på grunderna i olika dansstilar.</p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-stone-100">
+                        <span class="text-lg font-bold text-stone-900">1 640 SEK</span>
+                        <a href="booking.html" class="bg-stone-900 hover:bg-[#D4AF37] text-white px-4 py-2 rounded-lg text-sm transition">Boka</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-stone-100 flex flex-col">
+                <img src="https://images.unsplash.com/photo-1518834195013-645cf57663c8?auto=format&fit=crop&w=800&q=80" alt="Balett" class="h-48 w-full object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-[#D4AF37] mb-2">Kurser & Lektioner</span>
+                    <h3 class="text-xl font-bold mb-2">Balett för vuxna & Barn</h3>
+                    <p class="text-stone-600 text-sm mb-6 flex-grow">Klassisk baletträning som förbättrar hållning, balans, vighet och teknik för alla nivåer.</p>
+                    <div class="flex justify-between items-center mt-auto pt-4 border-t border-stone-100">
+                        <span class="text-lg font-bold text-stone-900">2 450 SEK</span>
+                        <a href="booking.html" class="bg-stone-900 hover:bg-[#D4AF37] text-white px-4 py-2 rounded-lg text-sm transition">Boka</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Östermalms Dansstudio</h3>
+                <p class="text-sm text-stone-400">Din dansstudio på Östermalm i Stockholm för professionell dansutveckling och glädje.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Kontakt</h3>
+                <p class="text-sm text-stone-400 mb-2"><i class="fa-solid fa-location-dot mr-2"></i> Skeppargatan 6, 114 52 Stockholm, Sweden</p>
+                <p class="text-sm text-stone-400 mb-2"><i class="fa-solid fa-phone mr-2"></i> +46709822264</p>
+                <p class="text-sm text-stone-400"><i class="fa-solid fa-envelope mr-2"></i> info@ostermalmsdansstudio.com</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Följ oss</h3>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/ostermalmsdansstudio/" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-[#D4AF37] transition text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ostermalmsdansstudio/" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-[#D4AF37] transition text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 border-t border-stone-800 text-center text-xs text-stone-500">
+            &copy; 2024 Östermalms Dansstudio. Alla rättigheter förbehållna.
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>"},{"path":"gallery.html","content":"<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Östermalms Dansstudio - Galleri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-stone-900 flex items-center gap-2">
+                <i class="fa-solid fa-fire text-[#D4AF37]"></i> Östermalms Dansstudio
+            </a>
+            <div class="hidden md:flex items-center gap-2">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Hem</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Om oss</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Kurser</a>
+                <a href="gallery.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Galleri</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Boka</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Kontakt</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-2xl focus:outline-none"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 flex flex-col gap-2">
+        <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Hem</a>
+        <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Om oss</a>
+        <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Kurser</a>
+        <a href="gallery.html" class="bg-amber-500 text-white rounded-lg px-4 py-2">Galleri</a>
+        <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Boka</a>
+        <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Kontakt</a>
+    </div>
+
+    <div class="bg-stone-100 py-4 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-stone-600">
+            <a href="index.html" class="hover:underline">Hem</a> > <span class="text-stone-900 font-semibold">Galleri</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4">Vårt Galleri</h1>
+            <p class="text-stone-600 max-w-2xl mx-auto">Följ med in i våra ljusa lokaler på Östermalm och upplev stämningen på våra kurser.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=800&q=80" alt="Dance 1" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Dance 2" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Dance 3" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Dance 4" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1524594152303-9fd14744787f?auto=format&fit=crop&w=800&q=80" alt="Dance 5" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1518834195013-645cf57663c8?auto=format&fit=crop&w=800&q=80" alt="Dance 6" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Östermalms Dansstudio</h3>
+                <p class="text-sm text-stone-400">Din dansstudio på Östermalm i Stockholm för professionell dansutveckling och glädje.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Kontakt</h3>
+                <p class="text-sm text-stone-400 mb-2"><i class="fa-solid fa-location-dot mr-2"></i> Skeppargatan 6, 114 52 Stockholm, Sweden</p>
+                <p class="text-sm text-stone-400 mb-2"><i class="fa-solid fa-phone mr-2"></i> +46709822264</p>
+                <p class="text-sm text-stone-400"><i class="fa-solid fa-envelope mr-2"></i> info@ostermalmsdansstudio.com</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Följ oss</h3>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/ostermalmsdansstudio/" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-[#D4AF37] transition text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ostermalmsdansstudio/" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-[#D4AF37] transition text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 border-t border-stone-800 text-center text-xs text-stone-500">
+            &copy; 2024 Östermalms Dansstudio. Alla rättigheter förbehållna.
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>"},{"path":"booking.html","content":"<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Östermalms Dansstudio - Boka kurs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-stone-900 flex items-center gap-2">
+                <i class="fa-solid fa-fire text-[#D4AF37]"></i> Östermalms Dansstudio
+            </a>
+            <div class="hidden md:flex items-center gap-2">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Hem</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Om oss</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Kurser</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Galleri</a>
+                <a href="booking.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Boka</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Kontakt</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-2xl focus:outline-none"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 flex flex-col gap-2">
+        <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Hem</a>
+        <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Om oss</a>
+        <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Kurser</a>
+        <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Galleri</a>
+        <a href="booking.html" class="bg-amber-500 text-white rounded-lg px-4 py-2">Boka</a>
+        <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Kontakt</a>
+    </div>
+
+    <div class="bg-stone-100 py-4 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-stone-600">
+            <a href="index.html" class="hover:underline">Hem</a> > <span class="text-stone-900 font-semibold">Boka</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6">
+        <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-stone-100">
+            <div class="text-center mb-10">
+                <h1 class="text-3xl font-bold mb-2">Boka kurs eller lektion</h1>
+                <p class="text-stone-600">Fyll i formuläret nedan för att boka din plats eller förfråga tid.</p>
+            </div>
+            <form action="https://formsubmit.co/info@ostermalmsdansstudio.com" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-stone-700">Ditt namn</label>
+                    <input type="text" name="name" required class="w-full px-5 py-4 border-2 border-stone-200 rounded-xl focus:border-[#D4AF37] focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="Förnamn Efternamn">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-stone-700">E-postadress</label>
+                    <input type="email" name="email" required class="w-full px-5 py-4 border-2 border-stone-200 rounded-xl focus:border-[#D4AF37] focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="din.epost@example.com">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-stone-700">Telefonnummer</label>
+                    <input type="tel" name="phone" required class="w-full px-5 py-4 border-2 border-stone-200 rounded-xl focus:border-[#D4AF37] focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder=	rann- +46 70 000 00 00">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-stone-700">Välj kurs / lektion</label>
+                    <select name="course" class="w-full px-5 py-4 border-2 border-stone-200 rounded-xl focus:border-[#D4AF37] focus:ring-4 focus:ring-amber-100 outline-none transition bg-white">
+                        <option value="Ballroom & Latin Nybörjare (Vuxna)">Ballroom & Latin Nybörjare (Vuxna) - 2 970 SEK</option>
+                        <option value="Zumba Dance Fitness">Zumba Dance Fitness - 2 145 SEK</option>
+                        <option value="Bröllopsdans - Privatlektion">Bröllopsdans - Privatlektion - 1 250 SEK</option>
+                        <option value="Privatlektion i Ballroom & Latin">Privatlektion i Ballroom & Latin - 1 150 SEK</option>
+                        <option value="Dansmix Minikids">Dansmix Minikids (3-4 år / 5+ år) - 1 640 SEK</option>
+                        <option value="Balett för vuxna & Barn">Balett för vuxna & Barn - 2 450 SEK</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-stone-700">Meddelande eller övriga önskemål (valfritt)</label>
+                    <textarea name="message" rows="4" class="w-full px-5 py-4 border-2 border-stone-200 rounded-xl focus:border-[#D4AF37] focus:ring-4 focus:ring-amber-100 outline-none transition" placeholder="Skriv eventuella frågor här..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-[#D4AF37] to-amber-600 text-white py-5 rounded-xl text-lg font-bold hover:shadow-xl transition">Skicka bokningsförfrågan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Östermalms Dansstudio</h3>
+                <p class="text-sm text-stone-400">Din dansstudio på Östermalm i Stockholm för professionell dansutveckling och glädje.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Kontakt</h3>
+                <p class="text-sm text-stone-400 mb-2"><i class="fa-solid fa-location-dot mr-2"></i> Skeppargatan 6, 114 52 Stockholm, Sweden</p>
+                <p class="text-sm text-stone-400 mb-2"><i class="fa-solid fa-phone mr-2"></i> +46709822264</p>
+                <p class="text-sm text-stone-400"><i class="fa-solid fa-envelope mr-2"></i> info@ostermalmsdansstudio.com</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Följ oss</h3>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/ostermalmsdansstudio/" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-[#D4AF37] transition text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ostermalmsdansstudio/" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-[#D4AF37] transition text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 border-t border-stone-800 text-center text-xs text-stone-500">
+            &copy; 2024 Östermalms Dansstudio. Alla rättigheter förbehållna.
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>"},{"path":"contacts.html","content":"<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Östermalms Dansstudio - Kontakt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-stone-900 flex items-center gap-2">
+                <i class="fa-solid fa-fire text-[#D4AF37]"></i> Östermalms Dansstudio
+            </a>
+            <div class="hidden md:flex items-center gap-2">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Hem</a>
+                <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Om oss</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Kurser</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Galleri</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Boka</a>
+                <a href="contacts.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Kontakt</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-2xl focus:outline-none"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 py-4 flex flex-col gap-2">
+        <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Hem</a>
+        <a href="about.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Om oss</a>
+        <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Kurser</a>
+        <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Galleri</a>
+        <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2">Boka</a>
+        <a href="contacts.html" class="bg-amber-500 text-white rounded-lg px-4 py-2">Kontakt</a>
+    </div>
+
+    <div class="bg-stone-100 py-4 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-stone-600">
+            <a href="index.html" class="hover:underline">Hem</a> > <span class="text-stone-900 font-semibold">Kontakt</span>
+        </div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold mb-4">Kontakta oss</h1>
+            <p class="text-stone-600 max-w-2xl mx-auto">Har du frågor om våra kurser, privatlektioner eller lokaler? Tveka inte att höra av dig till oss.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-stone-100 flex flex-col justify-between">
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">Kontaktuppgifter</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-amber-100 text-[#D4AF37] rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-stone-900">Adress</h3>
+                                <p class="text-stone-600">Skeppargatan 6, 114 52 Stockholm, Sweden</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-amber-100 text-[#D4AF37] rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-stone-900">Telefon</h3>
+                                <p class="text-stone-600">+46709822264</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-amber-100 text-[#D4AF37] rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-stone-900">E-post</h3>
+                                <p class="text-stone-600">info@ostermalmsdansstudio.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-amber-100 text-[#D4AF37] rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-stone-900">Öppettider</h3>
+                                <p class="text-stone-600">Enligt kursschema och tidsbokning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 pt-6 border-t border-stone-100">
+                    <h3 class="font-semibold text-stone-900 mb-4">Följ oss i sociala medier</h3>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/ostermalmsdansstudio/" target="_blank" class="w-12 h-12 rounded-xl bg-stone-900 flex items-center justify-center hover:bg-[#D4AF37] transition text-white text-xl"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ostermalmsdansstudio/" target="_blank" class="w-12 h-12 rounded-xl bg-stone-900 flex items-center justify-center hover:bg-[#D4AF37] transition text-white text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-stone-100 h-[500px] md:h-auto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.9818320427976!2d18.08375607686506!3d59.33405091040854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d51f2bc1b03%3A0x8e831633513a9689!2zU2tlcHBhcmdhdGFuIDYsIDExNCA1MiBTdG9ja2hvbG0sIFN3ZWRlbg!5e0!3m2!1ssv!2sse!4v1700000000000!5m2!1ssv!2sse" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Östermalms Dansstudio</h3>
+                <p class="text-sm text-stone-400">Din dansstudio på Östermalm i Stockholm för professionell dansutveckling och glädje.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Kontakt</h3>
+                <p class="text-sm text-stone-400 mb-2"><i class="fa-solid fa-location-dot mr-2"></i> Skeppargatan 6, 114 52 Stockholm, Sweden</p>
+                <p class="text-sm text-stone-400 mb-2"><i class="fa-solid fa-phone mr-2"></i> +46709822264</p>
+                <p class="text-sm text-stone-400"><i class="fa-solid fa-envelope mr-2"></i> info@ostermalmsdansstudio.com</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Följ oss</h3>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/ostermalmsdansstudio/" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-[#D4AF37] transition text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/ostermalmsdansstudio/" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 flex items-center justify-center hover:bg-[#D4AF37] transition text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 border-t border-stone-800 text-center text-xs text-stone-500">
+            &copy; 2024 Östermalms Dansstudio. Alla rättigheter förbehållna.
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
